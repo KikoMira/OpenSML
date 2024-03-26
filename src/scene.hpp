@@ -25,7 +25,7 @@
 
 // Simple clock to calculate the delta time
 
-struct Clock {
+struct Clock{
     uint32_t last_tick_time = 0;
     uint32_t delta = 0;
 
@@ -48,7 +48,7 @@ struct Clock {
 
 //OpenGL Scene structure
 
-struct Scene {
+struct Scene{
   virtual void update(float delta) = 0; // Update the scene
   virtual void load_resources() = 0;  // Load scene specific resources
   virtual void play_audio() = 0;       // Handle any scene audio
